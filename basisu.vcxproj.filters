@@ -59,6 +59,9 @@
     <ClCompile Include="encoder\pvpngreader.cpp">
       <Filter>encoder</Filter>
     </ClCompile>
+    <ClCompile Include="encoder\basisu_astc_decomp.cpp">
+      <Filter>encoder</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="transcoder\basisu.h">
@@ -155,6 +158,9 @@
       <Filter>encoder</Filter>
     </ClInclude>
     <ClInclude Include="encoder\pvpngreader.h">
+      <Filter>encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="encoder\basisu_astc_decomp.h">
       <Filter>encoder</Filter>
     </ClInclude>
   </ItemGroup>

@@ -144,7 +144,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <AdditionalIncludeDirectories>OpenCL</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>NDEBUG;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions);BASISU_SUPPORT_SSE=1;BASISU_SUPPORT_OPENCL=1</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions);BASISU_SUPPORT_SSE=1;BASISU_SUPPORT_OPENCL=1;BASISU_USE_ASTC_DECOMPRESS=1</PreprocessorDefinitions>
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -163,6 +163,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="encoder\basisu_astc_decomp.cpp" />
     <ClCompile Include="encoder\basisu_backend.cpp" />
     <ClCompile Include="encoder\basisu_basis_file.cpp" />
     <ClCompile Include="encoder\basisu_bc7enc.cpp" />
@@ -181,6 +182,7 @@
     <ClCompile Include="encoder\jpgd.cpp" />
     <ClCompile Include="encoder\pvpngreader.cpp" />
     <ClCompile Include="zstd\zstd.c" />
+    <ClInclude Include="encoder\basisu_astc_decomp.h" />
     <ClInclude Include="encoder\basisu_ocl_kernels.h" />
     <ClInclude Include="encoder\basisu_opencl.h" />
     <ClInclude Include="encoder\pvpngreader.h" />
